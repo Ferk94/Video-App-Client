@@ -1,24 +1,123 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
-import SignUp from '../components/signUp/signUp';
-import Login from '../components/login/login';
+import Button from 'react-bootstrap/Button';
 import './navBar.css';
 
-const NavBar = () => {
-  return (
-    <div className='navBar-container'>
-      <Link to='/signUp'>
-        <button>
-            Registro
-        </button>
-      </Link>
-      <Link to='/login'>
-        <button>
-            Inicio de sesión
-        </button>
-      </Link>
-    </div>
-  )
+const NavBar = (props) => {
+  // eslint-disable-next-line no-lone-blocks
+  {if(props.home){
+    return (
+      <div className='navBar-container'>
+        <Link to='/signUp'>
+          <Button
+          style={{
+            marginLeft: "5px",
+            marginRight: "5px",
+            borderRadius: "30px",
+            fontSize: "11px",
+            fontWeight: "bold",
+            fontFamily: "Fredoka",
+            letterSpacing: "1px",
+            border: "1px solid #ef0b51",
+            backgroundColor: "#ef0b51",
+            height: "35px",
+            width: "100px",
+            boxShadow: "0px 3px 5px 0px #989898b2",
+          }}
+          >
+              Registrarse
+          </Button>
+        </Link>
+        <Link to='/login'>
+          <Button
+          style={{
+            marginLeft: "5px",
+            marginRight: "5px",
+            borderRadius: "30px",
+            fontSize: "11px",
+            fontWeight: "bold",
+            fontFamily: "Fredoka",
+            letterSpacing: "1px",
+            border: "1px solid #ef0b51",
+            backgroundColor: "#ef0b51",
+            height: "35px",
+            width: "100px",
+            boxShadow: "0px 3px 5px 0px #989898b2",
+          }}
+          >
+              Ingresar
+          </Button>
+        </Link>
+      </div>
+    )
+
+  }else if(props.signUp || props.login){
+    return (
+      <div className='navBar-container'>
+        <Link to='/signUp'>
+          <Button
+          style={{
+            marginLeft: "5px",
+            marginRight: "5px",
+            borderRadius: "30px",
+            fontSize: "11px",
+            fontWeight: "bold",
+            fontFamily: "Fredoka",
+            letterSpacing: "1px",
+            border: "1px solid #ef0b51",
+            backgroundColor: "#ef0b51",
+            height: "35px",
+            width: "100px",
+            boxShadow: "0px 3px 5px 0px #989898b2",
+          }}
+          >
+              Registrarse
+          </Button>
+        </Link>
+        <Link to='/login'>
+          <Button
+          style={{
+            marginLeft: "5px",
+            marginRight: "5px",
+            borderRadius: "30px",
+            fontSize: "11px",
+            fontWeight: "bold",
+            fontFamily: "Fredoka",
+            letterSpacing: "1px",
+            border: "1px solid #ef0b51",
+            backgroundColor: "#ef0b51",
+            height: "35px",
+            width: "100px",
+            boxShadow: "0px 3px 5px 0px #989898b2",
+          }}
+          >
+              Ingresar
+          </Button>
+        </Link>
+        <Link to='/'>
+          <Button
+          style={{
+            marginLeft: "5px",
+            marginRight: "5px",
+            borderRadius: "30px",
+            fontSize: "11px",
+            fontWeight: "bold",
+            fontFamily: "Fredoka",
+            letterSpacing: "1px",
+            border: "1px solid #ef0b51",
+            backgroundColor: "#ef0b51",
+            height: "35px",
+            width: "100px",
+            boxShadow: "0px 3px 5px 0px #989898b2",
+          }}
+          >
+            Volver
+          </Button>
+        </Link>
+      </div>
+    )
+  }
+}
 }
 
 export default NavBar;

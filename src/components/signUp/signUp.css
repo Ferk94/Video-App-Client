@@ -1,0 +1,26 @@
+.signUp-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.navBar-space {
+    position: fixed;
+    top: 0;
+    background-color: transparent;
+    width: 100%;
+    height: 80px;
+    padding-left: 50px;
+    font-size: 20px;
+}
+
+.signUp-form-container{
+    height: 70vh;
+    width: 50%;
+    background-color: #ef0b51;
+    border-radius: 30px;
+}
