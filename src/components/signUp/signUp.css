@@ -5,10 +5,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url('https://images.pexels.com/photos/3709369/pexels-photo-3709369.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+
+.div-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
-.navBar-space {
+.signUp-navBar-space {
     position: fixed;
     top: 0;
     background-color: transparent;
@@ -19,8 +26,8 @@
 }
 
 .signUp-form-container{
-    height: 70vh;
-    width: 50%;
+    height: 60vh;
+    width: 45%;
     background-color: #ef0b51;
     border-radius: 30px;
 }
