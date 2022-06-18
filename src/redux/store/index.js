@@ -4,7 +4,7 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 // import { persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 import thunk from 'redux-thunk';  
-import reducer from '../reducers';
+import updateUserInfo from '../reducers';
 
 // const persistConfig = {
 //     key: "root",
@@ -18,4 +18,4 @@ import reducer from '../reducers';
 
 // const reducers = persistReducer(persistConfig, index);
 
-export const store = createStore(reducer, composeWithDevTools(applyMiddleware(thunk)))
+export const store = createStore(updateUserInfo, composeWithDevTools(applyMiddleware(thunk)))

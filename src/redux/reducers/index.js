@@ -23,7 +23,7 @@ export function getTokenLocalStorage() {
 
 
 
-export default function reducer(state = initialState, action) {
+export default function updateUserInfo(state = initialState, action) {
     switch (action.type) {
         case SIGN_UP:
             setTokenLocalStorage(action.payload)

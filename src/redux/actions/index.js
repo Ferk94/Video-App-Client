@@ -17,7 +17,7 @@ export function signUp(payload){
           dispatch({ type: SIGN_UP, payload: response.data.token });
            dispatch({
              type: GET_USER_INFO,
-             payload: response.data.user
+             payload: response.data.userInfo
            });
            return "Account created";
 
@@ -35,7 +35,6 @@ export function login(payload){
      try {
 
          const response = await axios.post(`${apiUrlUser}/login`, payload)
-   
          if(response.data.token){
            dispatch({
                type: SIGN_IN,
@@ -43,7 +42,7 @@ export function login(payload){
            })
            dispatch({
                type: GET_USER_INFO,
-               páyload: response.data.user
+               payload: response.data.userInfo
            })
            return response.status;
          }else {
