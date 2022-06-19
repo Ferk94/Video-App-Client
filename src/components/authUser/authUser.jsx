@@ -1,14 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Navigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+import AuthUserModal from './authUserModal';
 
 const AuthUser = (props) => {
 
-const [redirect, setRedirect] = useState(false);
 const userInfo = useSelector(state => state.userInfo);
 
-console.log(userInfo, 'llega ahora')
-console.log(props, 'q tengo en props?')
 
 if(userInfo?.email && userInfo.role?.includes(props.userRole))
  return <Navigate to='/user'/>
@@ -20,7 +18,7 @@ else
 
   return (
     <div>
-        soy AuthUser
+        <AuthUserModal/>
     </div>
   )
 }

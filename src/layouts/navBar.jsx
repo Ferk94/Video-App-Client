@@ -20,8 +20,8 @@ const NavBar = (props) => {
             letterSpacing: "1px",
             border: "1px solid #ef0b51",
             backgroundColor: "#ef0b51",
-            height: "35px",
-            width: "100px",
+            height: "50px",
+            width: "150px",
             boxShadow: "0px 3px 5px 0px #989898b2",
           }}
           >
@@ -40,8 +40,8 @@ const NavBar = (props) => {
             letterSpacing: "1px",
             border: "1px solid #ef0b51",
             backgroundColor: "#ef0b51",
-            height: "35px",
-            width: "100px",
+            height: "50px",
+            width: "150px",
             boxShadow: "0px 3px 5px 0px #989898b2",
           }}
           >
@@ -66,8 +66,8 @@ const NavBar = (props) => {
             letterSpacing: "1px",
             border: "1px solid #ef0b51",
             backgroundColor: "#ef0b51",
-            height: "35px",
-            width: "100px",
+            height: "50px",
+            width: "150px",
             boxShadow: "0px 3px 5px 0px #989898b2",
           }}
           >
@@ -86,8 +86,8 @@ const NavBar = (props) => {
             letterSpacing: "1px",
             border: "1px solid #ef0b51",
             backgroundColor: "#ef0b51",
-            height: "35px",
-            width: "100px",
+            height: "50px",
+            width: "150px",
             boxShadow: "0px 3px 5px 0px #989898b2",
           }}
           >
@@ -99,19 +99,19 @@ const NavBar = (props) => {
           style={{
             marginLeft: "5px",
             marginRight: "5px",
-            borderRadius: "30px",
+            borderRadius: "50px",
             fontSize: "11px",
             fontWeight: "bold",
             fontFamily: "Fredoka",
             letterSpacing: "1px",
             border: "1px solid #ef0b51",
             backgroundColor: "#ef0b51",
-            height: "35px",
-            width: "100px",
+            height: "50px",
+            width: "55px",
             boxShadow: "0px 3px 5px 0px #989898b2",
           }}
           >
-            Volver
+            Atrás
           </Button>
         </Link>
       </div>
